@@ -9,6 +9,7 @@ class Filter extends Component {
   renderRadioButtons(){
     return (
       <ul className="category-list">
+        <RadioButton key="all" value="All" onFilter={this.props.onFilter} checked={true}/>
         {this.props.categories.map(this.renderRadioButton)}
       </ul>
     );

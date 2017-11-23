@@ -2,3 +2,7 @@ ul.category-list {
     list-style: none;
     padding: 0;
 }
+
+li.category-item {
+    margin-bottom: 5px;
+}

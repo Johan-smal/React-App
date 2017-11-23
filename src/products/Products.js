@@ -12,7 +12,7 @@ export default class Products extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-  this.setState({ selectedCategory: nextProps.filter });  
+  this.setState({ selectedCategory: nextProps.filter });
 }
 
   getSelectedCategory(){
@@ -20,7 +20,7 @@ export default class Products extends Component {
   }
 
   showProduct(productCategory){
-    if(this.getSelectedCategory()==="all"){
+    if(this.getSelectedCategory()==="All"){
       return true;
     } else if(this.getSelectedCategory()===productCategory){
       return true;

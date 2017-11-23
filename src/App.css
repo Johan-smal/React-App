@@ -1,10 +1,16 @@
 .App {
   width: 1200px;
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
 }
 
 .Page-header {
   text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  color: #3366CC;
 }
 .Page-Description {
   text-align: justify;
@@ -13,11 +19,41 @@
 .App-content {
   width: 60%;
   float: right;
-  padding: 20px 10%;
+  margin: 20px 10%;
 }
 
 .App-sidebar {
   width: 15%;
-  padding: 20px 2.5%;
+  margin: 20px 2.5%;
   float:left;
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .App {
+    width: 96%;
+    margin: 0 2%;
+  }
+  .App-content {
+    width: 100%;
+    float: left;
+    margin: 10px 0%;
+  }
+  .App-sidebar {
+    width: 100%;
+    float: left;
+    margin: 10px 0%;
+  }
+  .Page-header {
+    width: 100%;
+  }
+  .Page-Description {
+    width: 100%;
+  }
 }

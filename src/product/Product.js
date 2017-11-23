@@ -35,8 +35,8 @@ export default class Product extends Component {
         <div className="product-img">
           <img className="" src={this.getImgSrc()}></img>
         </div>
-        <h4>{this.getName()}</h4>
-        <p>R{this.getPrice()}</p>
+        <h4 className="product-title">{this.getName()}</h4>
+        <p className="product-price">R{this.getPrice()}</p>
       </div>
     );
   }

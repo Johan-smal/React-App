@@ -12,18 +12,18 @@
 .radio-label > i {
   display: inline-block;
   vertical-align: middle;
-  width:  16px;
-  height: 16px;
+  width:  13px;
+  height: 13px;
   margin-right: 5px;
   border-radius: 50%;
   transition: 0.2s;
   box-shadow: inset 0 0 0 8px #fff;
-  border: 2px solid #3366CC;
+  border: 1px solid #3366CC;
   background: gray;
 }
 /* CHECKBOX OVERWRITE STYLES */
 .radio-label:hover > i{
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 4px #fff;
   background: gray;
 }
 .radio-label > input:checked + i{
