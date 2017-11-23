@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Chenin Blanc",
+      "price": 89,
+      "img": "./public/img1.jpg",
+      "category": "White Wine"
+    },
+    {
+      "id": 2,
+      "name": "Viognier",
+      "price": 125,
+      "img": "./public/img1.jpg",
+      "category": "White Wine"
+    },
+    {
+      "id": 3,
+      "name": "Chardonnay",
+      "price": 200,
+      "img": "./public/img1.jpg",
+      "category": "White Wine"
+    },
+    {
+      "id": 4,
+      "name": "Mourvèdre Rosè",
+      "price": 105,
+      "img": "./public/img1.jpg",
+      "category": "Rosè"
+    },
+    {
+      "id": 5,
+      "name": "babel",
+      "price": 135,
+      "img": "./public/img1.jpg",
+      "category": "Red Wine"
+    },
+    {
+      "id": 6,
+      "name": "Shiraz",
+      "price": 110,
+      "img": "./public/img1.jpg",
+      "category": "Red Wine"
+    },
+    {
+      "id": 7,
+      "name": "Nebukadnesar",
+      "price": 460,
+      "img": "./public/img1.jpg",
+      "category": "Red Wine"
+    },
+    {
+      "id": 8,
+      "name": "Sprankel",
+      "price": 605,
+      "img": "./public/img1.jpg",
+      "category": "Sparkling"
+    }
+
+  ]
+}
