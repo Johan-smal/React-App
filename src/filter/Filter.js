@@ -4,7 +4,6 @@ import "./Filter.css";
 class Filter extends Component {
   constructor(props){
     super(props);
-    console.log(props);
   }
 
   renderRadioButtons(){
@@ -16,7 +15,7 @@ class Filter extends Component {
   }
 
   renderRadioButton = label => (
-    <RadioButton key={label} value={label} />
+    <RadioButton key={label} value={label} onFilter={this.props.onFilter}/>
   )
 
   render(){

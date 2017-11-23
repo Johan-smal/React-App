@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./Product.css";
-class Product extends Component {
+
+export default class Product extends Component {
   constructor(props){
     super(props);
-    console.log(this.props);
   }
 
   getID(){
@@ -27,6 +27,9 @@ class Product extends Component {
   }
 
   render(){
+    if(!this.props.show){
+      return null;
+    }
     return (
       <div className="product" data-category={this.getCategory()}>
         <h4>{this.getName()}</h4>
@@ -34,5 +37,3 @@ class Product extends Component {
     );
   }
 }
-
-export default Product;

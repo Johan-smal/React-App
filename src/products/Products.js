@@ -2,10 +2,31 @@ import React, { Component } from 'react';
 import "./Products.css";
 import Product from '../product/Product';
 
-class Products extends Component {
+export default class Products extends Component {
   constructor(props){
     super(props);
-    console.log(this.props);
+    this.state = {
+      selectedCategory: this.props.filter
+    }
+    console.log(this.props.filter);
+  }
+
+  componentWillReceiveProps(nextProps) {
+  this.setState({ selectedCategory: nextProps.filter });  
+}
+
+  getSelectedCategory(){
+    return this.state.selectedCategory;
+  }
+
+  showProduct(productCategory){
+    if(this.getSelectedCategory()==="all"){
+      return true;
+    } else if(this.getSelectedCategory()===productCategory){
+      return true;
+    } else {
+      return false;
+    }
   }
 
   renderProducts(){
@@ -13,10 +34,11 @@ class Products extends Component {
   }
 
   renderProduct = product => (
-    <Product key={product.id} product={product}/>
+        <Product key={product.id} product={product} show={this.showProduct(product.category)}/>
   )
 
   render(){
+    console.log(this.getSelectedCategory());
     return (
       <div className="products-container">
         {this.renderProducts()}
@@ -24,5 +46,3 @@ class Products extends Component {
     );
   }
 }
-
-export default Products;
