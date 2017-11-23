@@ -7,8 +7,8 @@ class RadioButton extends Component {
 
   render(){
     return (
-      <li>
-        <label><input type="radio" name="category" onClick={this.props.onFilter} value={this.props.value}></input>{this.props.value}</label>
+      <li className="category-item">
+        <label className="radio-label"><input type="radio" name="category" onClick={this.props.onFilter} value={this.props.value}></input><i></i>{this.props.value}</label>
       </li>
     );
   }

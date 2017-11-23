@@ -8,7 +8,7 @@ class Filter extends Component {
 
   renderRadioButtons(){
     return (
-      <ul>
+      <ul className="category-list">
         {this.props.categories.map(this.renderRadioButton)}
       </ul>
     );

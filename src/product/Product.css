@@ -1,0 +1,13 @@
+.product {
+  width: 25%;
+  padding: 0 4%;
+  float: left;
+}
+
+.product-img {
+  width: 90%;
+  margin: auto;
+}
+.product-img > img {
+  width: 100%;
+}
