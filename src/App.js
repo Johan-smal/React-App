@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+//Import of json information to build page
 import products from './products.json';
 import categories from './categories.json';
+
+//Import of custom Components
 import Filter from './filter/Filter';
 import Products from './products/Products';
 

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import "./Product.css";
 
 export default class Product extends Component {
-  constructor(props){
-    super(props);
-  }
-
   getID(){
     return this.props.product.id;
   }
@@ -33,7 +29,7 @@ export default class Product extends Component {
     return (
       <div className="product" data-category={this.getCategory()}>
         <div className="product-img">
-          <img className="" src={this.getImgSrc()}></img>
+          <img className="" src={this.getImgSrc()} alt={this.getName()}></img>
         </div>
         <h4 className="product-title">{this.getName()}</h4>
         <p className="product-price">R{this.getPrice()}</p>

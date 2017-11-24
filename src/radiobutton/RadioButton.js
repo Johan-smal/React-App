@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import "./RadioButton.css";
-class RadioButton extends Component {
-  constructor(props){
-    super(props);
-  }
 
+class RadioButton extends Component {
   render(){
     return (
       <li className="category-item">

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import RadioButton from '../radiobutton/RadioButton';
 import "./Filter.css";
 class Filter extends Component {
-  constructor(props){
-    super(props);
-  }
-
   renderRadioButtons(){
     return (
       <ul className="category-list">
@@ -22,7 +18,7 @@ class Filter extends Component {
   render(){
     return (
       <form>
-      <label>Filter Products</label>
+      <label><strong>Filter Products</strong></label>
       {this.renderRadioButtons()}
       </form>
     );
